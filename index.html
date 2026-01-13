@@ -1,10 +1,488 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <h1>Portfolio en construcción</h1>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Javier</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/PerfilRecortado.png" alt="">
+            </div>
+            <h1>JAVIER EXPÓSITO</h1>
+            <h2>Web Developer Junior - Java| Python | PHP | JavaScript</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/javiexposito99/"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://github.com/javiexposito99?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/javier-exp%C3%B3sito-d%C3%A1vila-ba803818a/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+     <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola! Soy Javier Expósito Dávila</span>, recién graduado en Desarrollo de Aplicaciones Web. En esta página encontrarás algunos de mis proyectos, 
+                reflejando mi pasión por la tecnología y el desarrollo web. Estoy siempre en busca de nuevas oportunidades para aprender y crecer profesionalmente. 
+                Me entusiasma trabajar en equipo, enfrentar nuevos retos y contribuir a proyectos innovadores. 
+                Mi objetivo es desarrollarme en el sector, aportar mis conocimientos y seguir aprendiendo. 
+                ¡Gracias por visitar mi página y espero que disfrutes explorando mis proyectos!</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                 <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-09-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            674 43 64 82
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            javiexposito9@gmail.com
+                        </li>
+                        <li>
+                            <strong>WebSite</strong>
+                            <a href="https://www.linkedin.com/in/javier-exp%C3%B3sito-d%C3%A1vila-ba803818a/" id="myLinkedin">Linkedin</a> | 
+                            <a href="https://github.com/javiexposito99?tab=repositories" id="myGithub">GitHub</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Lucena | <b>Córdoba</b>
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Developer Junior</span>
+                        </li>
+                    </ul>
+                 </div>
+
+                <!-- intereses -->
+                 <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>                            
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>                            
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>                          
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>                          
+                            <span>LEER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>                            
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera-retro"></i>                            
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                 </div>
+            </div>    
+            <button onclick="descargarPDF()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+     </section>
+
+    <!-- SECCION SKILLS --> 
+     <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Vue</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring Boot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Docker & Kubernetes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>76%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WordPress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skill -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>74%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>64%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Flexibilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión del Tiempo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Etica Laboral</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+     </section>
+
+    <!-- SECCION CURRICULUM -->
+     <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum CV</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico Superior en Desarrollo de Aplicaciones Web</h4>
+                        <span class="casa">I.E.S. Medac</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Durante el ciclo superior de Desarrollo de Aplicaciones Web, aprendí a crear y gestionar aplicaciones web utilizando diversos 
+                            lenguajes de programación y tecnologías. Adquirí habilidades en diseño de bases de datos, desarrollo frontend y backend, y gestión de proyectos. 
+                            También desarrollé una sólida comprensión de buenas prácticas de programación y trabajo en equipo.</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+                        
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="item izq">
+                        <h4>CFGM Sistemas Microinformáticos y Redes</h4>
+                        <span class="casa">I.E.S. Marqués de Comares</span>
+                        <span class="fecha">2016 - 2018</span>
+                        <p>En el CFGM de Sistemas Microinformáticos y Redes, adquirí conocimientos en instalación y mantenimiento de 
+                            sistemas operativos, configuración de redes y gestión de hardware. Aprendí a solucionar problemas informáticos y a 
+                            asegurar la seguridad de los sistemas y redes. También desarrollé habilidades en soporte técnico y administración de sistemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+                        
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3 id="experienciatrabajo">Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Junior (Prácticas)</h4>
+                        <span class="casa">Fundación MEDAC</span>
+                        <span class="fecha">03/2024 - 06/2024</span>
+                        <p>Durante mis prácticas, desarrollé una aplicación utilizando Git, Docker
+                            y Python. Además, adquirí experiencia en Kubernetes, Vue y SQL para
+                            completar el proyecto.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+                        
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">Clínica Dental Romero y Álvarez</span>
+                        <span class="fecha">10/2020 - 03/2024</span>
+                        <p>Mantenimiento y configuración del sistema informático. Instalación,
+                            configuración y reparación de equipos, (servidores, escáner,
+                            fresadoras dentales, impresoras 3D).
+                            Gestion de la base de datos del software dental.
+                            Impresión 3D. (Photo mono x, formlabs 2, envisiontec...)
+                            Manejo de software (Meshmixer, exocad, blue sky, 3shape, nemotec,
+                            nemesys dental, sony vegas, escaner de mesa medit, etc.)
+                            Realización de radiografías como Tomografía axial computarizada,
+                            ortopantomografía, teleradiografía, etc.)</p>
+                        <div class="conectord">
+                            <div class="circulod">
+                        
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
+
+    <!-- SECCION PORFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1974.4711345640535!2d-4.47775102526111!3d37.41212479988018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1721805520213!5m2!1ses!2ses" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lucena, Córdoba
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamanos: +34 674 43 64 82
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: javiexposito9@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/javiexposito99/"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://github.com/javiexposito99?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/in/javier-exp%C3%B3sito-d%C3%A1vila-ba803818a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
