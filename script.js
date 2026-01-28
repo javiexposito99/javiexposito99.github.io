@@ -30,15 +30,24 @@ function efectoHabilidades(){
         habilidades[6].classList.add("springboot");
         habilidades[7].classList.add("dockerkubernetes");
         habilidades[8].classList.add("wordpress");
-        habilidades[9].classList.add("comunicacion");
-        habilidades[10].classList.add("trabajoEquipo");
-        habilidades[11].classList.add("creatividad");
-        habilidades[12].classList.add("dedicacion");
-        habilidades[13].classList.add("proyectManagement");
-        habilidades[14].classList.add("flexibilidad");
-        habilidades[15].classList.add("resoluciondeproblemas");
-        habilidades[16].classList.add("gestiondeltiempo");
-        habilidades[17].classList.add("eticalaboral");
+        habilidades[9].classList.add("gestionSQL");
+        habilidades[10].classList.add("windev");
+        habilidades[11].classList.add("git");
+
+        // Skill Profesional
+        habilidades[12].classList.add("comunicacion");
+        habilidades[13].classList.add("trabajoEquipo");
+        habilidades[14].classList.add("creatividad");
+        habilidades[15].classList.add("dedicacion");
+        habilidades[16].classList.add("proyectManagement");
+        habilidades[17].classList.add("flexibilidad");
+        habilidades[18].classList.add("resoluciondeproblemas");
+        habilidades[19].classList.add("gestiondeltiempo");
+        habilidades[20].classList.add("eticalaboral");
+        habilidades[21].classList.add("orientacionObjetivos");    
+        habilidades[21].classList.add("motivacionCompromiso");   
+        habilidades[21].classList.add("adaptabilidad");   
+
     }
 }
 
