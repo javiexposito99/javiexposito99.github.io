@@ -51,7 +51,7 @@ window.onscroll = function(){
 //Boton para descargar CV
 function descargarPDF(){
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1lAr2ORJSs7MpRPbw7b_wisbpVACPqXAq/view?usp=drive_link';
+    link.href = 'https://drive.google.com/file/d/1Q_L0FzkRp2tkkte6mv3nXVkTWMx6smQI/view?usp=drive_link';
     link.download = 'CV-Fco. Javier Expósito Dávila.pdf';
     link.click();
 }
